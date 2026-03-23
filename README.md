@@ -31,16 +31,9 @@ Make sure you have the following installed:
 ## Making Plugins
 Clone or Fork this repository
 ```bash
-git clone https://github.com/RecomBox/recombox_plugin_provider
-cd recombox_plugin_provider
+git clone https://github.com/RecomBox/recombox_plugin_template
+cd recombox_plugin_template
 ```
-
-Go to `plugin_template` directory
-```bash
-cd plugins/plugin_template
-```
-- You can copy the template and rename the directory to your pluign name.
-- Make sure to add your plugin to another repository and add it to `/plugins_manifest.json`
 
 Install dependencies:
 ```bash
