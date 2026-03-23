@@ -41,7 +41,7 @@ Install dependencies:
 bun install
 ```
 
-**[Required]** export functions inside `plugin.ts`:
+**[Required]** export functions inside `src/plugin.ts`:
 ```typescript
 import type * as get_sources_types from "@plugin_provider/global/types/get_sources";
 import type * as get_torrents_types from "@plugin_provider/global/types/get_torrents";
