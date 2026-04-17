@@ -23,12 +23,16 @@ export default async function get_torrents(input_payload: get_torrents_types.Inp
         let data = res.body_json();
         let result_list = data["torrents"]??[];
 
+        console.log(result_list.length);
+
         if (result_list.length == 0) break;
+
+        if (result_list[0]["imdb_id"] !== imdb_id) break;
         
         for (let result of result_list) {
-            console.log(result["season"]??"", s);
-            console.log(result["episode"]??"", e);
-            console.log("===")
+            // console.log(result["season"]??"", s);
+            // console.log(result["episode"]??"", e);
+            // console.log("===")
             if (
                 (parseInt(result["season"]) !== s)
                 || (parseInt(result["episode"]) !== e)
