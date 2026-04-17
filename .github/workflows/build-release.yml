@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  PLUGIN_NAME: The Pirate Bay
-  ICON_URL: https://torrindex.net/images/tpb.jpg
+  PLUGIN_NAME: EZTV
+  ICON_URL: https://upload.wikimedia.org/wikipedia/en/a/ae/EZTV.png
 
 jobs:
   build:
