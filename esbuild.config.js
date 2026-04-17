@@ -15,6 +15,7 @@ await build({
     define: {
         "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development"),
     },
+    drop: ["console"],
     plugins: [
         NodeModulesPolyfillPlugin(),
         NodeGlobalsPolyfillPlugin({
