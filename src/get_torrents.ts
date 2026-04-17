@@ -32,6 +32,7 @@ export default async function get_torrents(input_payload: get_torrents_types.Inp
             if (
                 (parseInt(result["season"]) !== s)
                 || (parseInt(result["episode"]) !== e)
+                || (parseInt(result["seeds"]) !== 0)
             ) continue;
             new_output_payload.push({
                 title: result["title"]??"",
